@@ -33,6 +33,10 @@ body{
 	text-decoration: none;
 }
 
+.link:visited{
+	color: $link-color-visited; 
+}
+
 .round-img{
 	border-radius: $image-radius;
 }
