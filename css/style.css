@@ -3,7 +3,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 .main-titles {
   color: #d84315;
@@ -19,15 +19,14 @@ body {
 
 .link {
   color: #ffffff;
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 .link:hover {
-  color: #ffffff;
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 .link:visited {
   color: #ffffff;
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 .round-img {
   border-radius: 50%; }
@@ -47,7 +46,14 @@ body {
   font-weight: bolder;
   border-radius: 10px;
   border-style: none;
-  text-decoration: none; }
+  text-decoration: none !important; }
+
+.link-read-more {
+  color: #000000;
+  font-weight: bolder; }
+
+.link-read-more:hover {
+  color: #d84315; }
 
 .carousel-indicators li {
   background-color: #ffffff !important;
