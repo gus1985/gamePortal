@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous");
 body {
   color: #918e88;
   font-family: "PT Sans", sans-serif;
@@ -12,10 +13,13 @@ body {
 
 .sub-titles {
   color: #000000;
-  font-size: 1.85em; }
+  font-size: 1.85em;
+  font-family: 'Righteous',cursive;
+  text-rendering: optimizelegibility; }
 
 .other-sub {
-  font-size: 1.07em; }
+  font-size: 1.07em;
+  color: #918e88; }
 
 .link {
   color: #ffffff;
