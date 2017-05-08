@@ -34,7 +34,8 @@ body{
 }
 
 .link:visited{
-	color: $link-color-visited; 
+	color: $link-color-visited;
+	text-decoration: none; 
 }
 
 .round-img{
@@ -59,6 +60,17 @@ body{
 	font-weight: bolder;
 	border-radius: 10px;
 	border-style: none;
+	text-decoration:none;
+}
+
+.carousel-indicators li{
+	background-color: $link-color!important;
+	border:none;
+}
+
+.carousel-indicators .active{
+	background-color: $button-bg-hover-color!important;
+	border:none; 
 }
 
 @import 'index';
