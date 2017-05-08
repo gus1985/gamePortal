@@ -26,7 +26,8 @@ body {
   text-decoration: none; }
 
 .link:visited {
-  color: #ffffff; }
+  color: #ffffff;
+  text-decoration: none; }
 
 .round-img {
   border-radius: 50%; }
@@ -45,7 +46,16 @@ body {
   padding: 10px;
   font-weight: bolder;
   border-radius: 10px;
-  border-style: none; }
+  border-style: none;
+  text-decoration: none; }
+
+.carousel-indicators li {
+  background-color: #ffffff !important;
+  border: none; }
+
+.carousel-indicators .active {
+  background-color: #d84315 !important;
+  border: none; }
 
 h1 {
   color: #918e88; }
