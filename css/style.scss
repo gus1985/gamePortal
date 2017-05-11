@@ -15,7 +15,7 @@ body{
 	margin:30px;
 }
 
-.sub-titles{
+h3{
 	color: $sub-title-color;
 	font-size: 1.85em;
 	font-family: 'Righteous',cursive;
@@ -24,7 +24,7 @@ body{
 
 .other-sub{
 	font-size: 1.07em;
-	color:#918e88;
+	color:$text-color;
 }
 
 .link{
