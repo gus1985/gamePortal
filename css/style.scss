@@ -9,10 +9,13 @@ body{
     text-decoration: none!important;
 }
 
-.main-titles{
+h2{
 	color: $main-title-color;
 	font-size: 2.85em;
 	margin:30px;
+	font-family: 'Righteous',cursive;
+	text-rendering: optimizelegibility;
+	
 }
 
 h3{
@@ -20,11 +23,18 @@ h3{
 	font-size: 1.85em;
 	font-family: 'Righteous',cursive;
 	text-rendering: optimizelegibility;
+	
+}
+
+h4{
+	color: $sub-title-color!important;
 }
 
 p{
 	font-size: 1.07em;
 	color:$text-color;
+	margin-top: 15px;
+	
 }
 
 .link{
@@ -39,6 +49,38 @@ p{
 .link:visited{
 	color: $link-color-visited;
 	text-decoration: none!important; 
+}
+
+.round-item-1{
+	color: #ffffff;
+    font-family: 'Righteous',cursive;
+    font-size: 2.85em;
+    border-radius: 50%;
+    padding: 25px 31px;
+    background-color: #f2841e;
+    float: left;
+    margin-top: 20px;
+}
+
+.round-item{
+    color: #ffffff;
+    font-family: 'Righteous',cursive;
+    font-size: 2.85em;
+    border-radius: 50%;
+    padding: 25px 26px;
+    background-color: #f2841e;
+    float: left;
+    margin-top: 20px;
+}
+
+#list-news ol li{
+	list-style: none;
+	display: inline-block;
+}
+
+.text-news{
+	display: inline-block;
+	text-align: left;
 }
 
 .round-img{
@@ -68,7 +110,7 @@ p{
 
 .link-read-more{
 	color: $sub-title-color;
-	font-weight: bolder;
+	font-weight: normal;
 }
 
 .link-read-more:hover{
