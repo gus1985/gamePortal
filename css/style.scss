@@ -40,15 +40,16 @@ p{
 .link{
 	color: $link-color;
 	text-decoration: none!important;
-}
 
-.link:hover{
-	text-decoration: none!important;
-}
+	&:hover{
+		text-decoration: none!important;
+	}
 
-.link:visited{
-	color: $link-color-visited;
-	text-decoration: none!important; 
+	&:visited{
+		color: $link-color-visited;
+		text-decoration: none!important; 
+	}
+
 }
 
 .round-item-1{
@@ -73,10 +74,14 @@ p{
     margin-top: 20px;
 }
 
-#list-news ol li{
-	list-style: none;
-	display: inline-block;
-}
+#list-news{
+	ol{
+		li{
+			list-style: none;
+			display: inline-block;
+		}
+	}
+}  
 
 .text-news{
 	display: inline-block;
@@ -89,10 +94,10 @@ p{
 
 .btn-bg-color{
 	background-color: $button-bg-color;
-}
 
-.btn-bg-color:hover{
-	background-color: $button-bg-hover-color;
+	&:hover{
+		background-color: $button-bg-hover-color;
+	}
 }
 
 .margins-titles{
@@ -111,21 +116,22 @@ p{
 .link-read-more{
 	color: $sub-title-color;
 	font-weight: normal;
+	
+	&:hover{
+		color: $main-title-color;
+	}
 }
 
-.link-read-more:hover{
-	color: $main-title-color;
-}
+.carousel-indicators{
+	li{
+		background-color: $link-color!important;
+		border:none;
+	}
+	.active{
+		background-color: $button-bg-hover-color!important;
+		border:none; 
+	}
 
-
-.carousel-indicators li{
-	background-color: $link-color!important;
-	border:none;
-}
-
-.carousel-indicators .active{
-	background-color: $button-bg-hover-color!important;
-	border:none; 
 }
 
 @import 'index';
