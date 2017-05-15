@@ -6,13 +6,14 @@ body{
 	font-family: "PT Sans", sans-serif;
     font-size: 14px;
     line-height: 18px; 
-    text-decoration: none!important;
+    text-decoration: none;
+    text-decoration-style: none;
 }
 
 h2{
 	color: $main-title-color;
 	font-size: 2.85em;
-	margin:30px;
+	margin:30px auto;
 	font-family: 'Righteous',cursive;
 	text-rendering: optimizelegibility;
 	
@@ -23,11 +24,12 @@ h3{
 	font-size: 1.85em;
 	font-family: 'Righteous',cursive;
 	text-rendering: optimizelegibility;
+	margin:30px auto;
 	
 }
 
 h4{
-	color: $sub-title-color!important;
+	color: $sub-title-color;
 }
 
 p{
@@ -37,17 +39,39 @@ p{
 	
 }
 
-.link{
-	color: $link-color;
-	text-decoration: none!important;
+a{
+	text-decoration: none;
 
 	&:hover{
-		text-decoration: none!important;
+		text-decoration:none;
+	}
+	&:visited{
+		text-decoration:none;
+	}
+	&:active{
+		text-decoration: none;
+	}
+}
+
+hr{
+	border-top: 5px solid rgba(90, 90, 90, 0.28); 
+	width: 100%;
+}
+
+.link{
+	color: $link-color;
+	text-decoration: none;
+
+	&:hover{
+		text-decoration: none;
 	}
 
 	&:visited{
 		color: $link-color-visited;
-		text-decoration: none!important; 
+		text-decoration: none; 
+	}
+	&:active{
+		text-decoration: none;
 	}
 
 }
@@ -76,6 +100,9 @@ p{
 
 #list-news{
 	ol{
+		margin-top: -15px;
+	}
+	ol{
 		li{
 			list-style: none;
 			display: inline-block;
@@ -101,7 +128,7 @@ p{
 }
 
 .margins-titles{
-	margin: 30px 0;
+	margin: 30px auto;
 }
 
 .btn-read-more{
@@ -110,12 +137,13 @@ p{
 	font-weight: bolder;
 	border-radius: 10px;
 	border-style: none;
-	text-decoration:none!important;
+	text-decoration:none;
 }
 
 .link-read-more{
 	color: $sub-title-color;
 	font-weight: normal;
+	text-decoration: none;
 	
 	&:hover{
 		color: $main-title-color;
@@ -124,14 +152,22 @@ p{
 
 .carousel-indicators{
 	li{
-		background-color: $link-color!important;
+		background-color: $link-color;
 		border:none;
+		width: 100px;
 	}
 	.active{
-		background-color: $button-bg-hover-color!important;
-		border:none; 
+		background-color: $button-bg-hover-color;
+		border:none;
+		width: 100px; 
 	}
 
+}
+
+.text-latest-news{
+	width: 100%; 
+	text-align: left; 
+	padding-left: 120px;
 }
 
 .testimonies{
@@ -147,6 +183,24 @@ p{
 		content: '"';
 		color: #f2841e;
 		font: 60px/40px Righteous, cursive;
+	}
+}
+
+@media (max-width: 768px){
+	h2{
+		text-align: -webkit-center;
+	}
+	h3{
+		text-align: -webkit-center;
+	}
+}
+
+@media (max-width: 992px){
+	h2{
+		text-align: -webkit-center;
+	}
+	h3{
+		text-align: -webkit-center;
 	}
 }
 
