@@ -4,12 +4,13 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  text-decoration: none !important; }
+  text-decoration: none;
+  text-decoration-style: none; }
 
 h2 {
   color: #d84315;
   font-size: 2.85em;
-  margin: 30px;
+  margin: 30px auto;
   font-family: 'Righteous',cursive;
   text-rendering: optimizelegibility; }
 
@@ -17,24 +18,40 @@ h3 {
   color: #000000;
   font-size: 1.85em;
   font-family: 'Righteous',cursive;
-  text-rendering: optimizelegibility; }
+  text-rendering: optimizelegibility;
+  margin: 30px auto; }
 
 h4 {
-  color: #000000 !important; }
+  color: #000000; }
 
 p {
   font-size: 1.07em;
   color: #918e88;
   margin-top: 15px; }
 
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+  a:visited {
+    text-decoration: none; }
+  a:active {
+    text-decoration: none; }
+
+hr {
+  border-top: 5px solid rgba(90, 90, 90, 0.28);
+  width: 100%; }
+
 .link {
   color: #ffffff;
-  text-decoration: none !important; }
+  text-decoration: none; }
   .link:hover {
-    text-decoration: none !important; }
+    text-decoration: none; }
   .link:visited {
     color: #ffffff;
-    text-decoration: none !important; }
+    text-decoration: none; }
+  .link:active {
+    text-decoration: none; }
 
 .round-item-1 {
   color: #ffffff;
@@ -56,6 +73,8 @@ p {
   float: left;
   margin-top: 20px; }
 
+#list-news ol {
+  margin-top: -15px; }
 #list-news ol li {
   list-style: none;
   display: inline-block; }
@@ -73,7 +92,7 @@ p {
     background-color: #d84315; }
 
 .margins-titles {
-  margin: 30px 0; }
+  margin: 30px auto; }
 
 .btn-read-more {
   color: #fff;
@@ -81,20 +100,28 @@ p {
   font-weight: bolder;
   border-radius: 10px;
   border-style: none;
-  text-decoration: none !important; }
+  text-decoration: none; }
 
 .link-read-more {
   color: #000000;
-  font-weight: normal; }
+  font-weight: normal;
+  text-decoration: none; }
   .link-read-more:hover {
     color: #d84315; }
 
 .carousel-indicators li {
-  background-color: #ffffff !important;
-  border: none; }
+  background-color: #ffffff;
+  border: none;
+  width: 100px; }
 .carousel-indicators .active {
-  background-color: #d84315 !important;
-  border: none; }
+  background-color: #d84315;
+  border: none;
+  width: 100px; }
+
+.text-latest-news {
+  width: 100%;
+  text-align: left;
+  padding-left: 120px; }
 
 .testimonies {
   padding: 0px 0px 0px 48px;
@@ -109,5 +136,17 @@ p {
     color: #f2841e;
     font: 60px/40px Righteous, cursive; }
 
+@media (max-width: 768px) {
+  h2 {
+    text-align: -webkit-center; }
+
+  h3 {
+    text-align: -webkit-center; } }
+@media (max-width: 992px) {
+  h2 {
+    text-align: -webkit-center; }
+
+  h3 {
+    text-align: -webkit-center; } }
 h1 {
   color: #918e88; }
