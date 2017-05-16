@@ -186,6 +186,29 @@ hr{
 	}
 }
 
+footer{
+	background-color: $head-foot-bg-color;
+	color: $link-color;
+	height: 100px;
+	padding-top: 50px;
+
+	a{
+		color: $link-color;
+
+		&:hover{
+			color: $main-title-color;
+		}
+
+	}
+
+	ul{
+		display: inline-block;
+		list-style: none;
+	}
+}
+
+/*RESPONSIVE*/
+
 @media (max-width: 768px){
 	h2{
 		text-align: -webkit-center;
