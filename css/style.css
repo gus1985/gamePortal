@@ -136,6 +136,20 @@ hr {
     color: #f2841e;
     font: 60px/40px Righteous, cursive; }
 
+footer {
+  background-color: #101010;
+  color: #ffffff;
+  height: 100px;
+  padding-top: 50px; }
+  footer a {
+    color: #ffffff; }
+    footer a:hover {
+      color: #d84315; }
+  footer ul {
+    display: inline-block;
+    list-style: none; }
+
+/*RESPONSIVE*/
 @media (max-width: 768px) {
   h2 {
     text-align: -webkit-center; }
