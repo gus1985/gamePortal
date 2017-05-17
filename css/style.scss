@@ -61,9 +61,10 @@ hr{
 header{
 	background-color: $head-foot-bg-color;
 	color: $link-color;
-	height: 220px;
+	height: 200px;
 	font-family: 'Righteous',cursive;
 	font-size: 20px;
+	z-index: 1000;
 
 	a{
 		color: $link-color;
@@ -230,12 +231,31 @@ footer{
 		}
 	}
 
+	#copiright{
+		margin-top: 8px;
+	}
+
+	.social-fb{
+		padding: 10px 13px;
+		background-color: #1c1b1b; 
+		color: $link-color;  
+		border-radius: $image-radius;
+		float: right;
+		margin-left: 15px;
+
+		&:hover{
+			color: $link-color;
+			background-color: $main-title-color;
+		}
+	}
+
 	.social{
 		background-color: #1c1b1b; 
 		color: $link-color; 
-		padding: 10px 5px; 
+		padding: 10px 10px; 
 		border-radius: $image-radius;
 		float: right;
+		margin-left: 15px;
 
 		&:hover{
 			color: $link-color;
