@@ -169,12 +169,13 @@ footer {
   footer #copiright {
     margin-top: 8px; }
   footer .social-fb {
-    padding: 10px 13px;
+    padding: 10px 14px;
     background-color: #1c1b1b;
     color: #ffffff;
     border-radius: 50%;
     float: right;
-    margin-left: 15px; }
+    margin-left: 15px;
+    font-size: 20px; }
     footer .social-fb:hover {
       color: #ffffff;
       background-color: #d84315; }
@@ -184,7 +185,8 @@ footer {
     padding: 10px 10px;
     border-radius: 50%;
     float: right;
-    margin-left: 15px; }
+    margin-left: 15px;
+    font-size: 20px; }
     footer .social:hover {
       color: #ffffff;
       background-color: #d84315; }
