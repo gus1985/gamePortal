@@ -58,6 +58,32 @@ hr{
 	width: 100%;
 }
 
+header{
+	background-color: $head-foot-bg-color;
+	color: $link-color;
+	height: 220px;
+	font-family: 'Righteous',cursive;
+	font-size: 20px;
+
+	a{
+		color: $link-color;
+		margin-left: 20px;
+
+		&:hover{
+			color: $main-title-color;
+		}
+	}
+
+	.head-nav{
+		color: $link-color;
+		float: right;
+
+		&:hover{
+			color: $main-title-color;
+		}
+	}
+}
+
 .link{
 	color: $link-color;
 	text-decoration: none;
@@ -127,6 +153,10 @@ hr{
 	}
 }
 
+.margins-head-foot{
+	margin: 90px auto;
+}
+
 .margins-titles{
 	margin: 30px auto;
 }
@@ -190,20 +220,27 @@ footer{
 	background-color: $head-foot-bg-color;
 	color: $link-color;
 	height: 100px;
-	padding-top: 50px;
 
 	a{
 		color: $link-color;
+		margin-left: 10px;
 
 		&:hover{
 			color: $main-title-color;
 		}
-
 	}
 
-	ul{
-		display: inline-block;
-		list-style: none;
+	.social{
+		background-color: #1c1b1b; 
+		color: $link-color; 
+		padding: 10px 5px; 
+		border-radius: $image-radius;
+		float: right;
+
+		&:hover{
+			color: $link-color;
+			background-color: $main-title-color;
+		}
 	}
 }
 
@@ -215,6 +252,9 @@ footer{
 	}
 	h3{
 		text-align: -webkit-center;
+	}
+	.social{
+		float: none;
 	}
 }
 
