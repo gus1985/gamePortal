@@ -45,9 +45,10 @@ hr {
 header {
   background-color: #101010;
   color: #ffffff;
-  height: 220px;
+  height: 200px;
   font-family: 'Righteous',cursive;
-  font-size: 20px; }
+  font-size: 20px;
+  z-index: 1000; }
   header a {
     color: #ffffff;
     margin-left: 20px; }
@@ -165,12 +166,25 @@ footer {
     margin-left: 10px; }
     footer a:hover {
       color: #d84315; }
+  footer #copiright {
+    margin-top: 8px; }
+  footer .social-fb {
+    padding: 10px 13px;
+    background-color: #1c1b1b;
+    color: #ffffff;
+    border-radius: 50%;
+    float: right;
+    margin-left: 15px; }
+    footer .social-fb:hover {
+      color: #ffffff;
+      background-color: #d84315; }
   footer .social {
     background-color: #1c1b1b;
     color: #ffffff;
-    padding: 10px 5px;
+    padding: 10px 10px;
     border-radius: 50%;
-    float: right; }
+    float: right;
+    margin-left: 15px; }
     footer .social:hover {
       color: #ffffff;
       background-color: #d84315; }
