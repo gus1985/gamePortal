@@ -1,6 +1,8 @@
 @import 'variables';
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
+/*GENERAL STYLES*/
+
 body{
 	color: $text-color; 
 	font-family: "PT Sans", sans-serif;
@@ -15,8 +17,7 @@ h2{
 	font-size: 2.85em;
 	margin:30px auto;
 	font-family: 'Righteous',cursive;
-	text-rendering: optimizelegibility;
-	
+	text-rendering: optimizelegibility;	
 }
 
 h3{
@@ -25,7 +26,6 @@ h3{
 	font-family: 'Righteous',cursive;
 	text-rendering: optimizelegibility;
 	margin:30px auto;
-	
 }
 
 h4{
@@ -36,7 +36,6 @@ p{
 	font-size: 1.07em;
 	color:$text-color;
 	margin-top: 15px;
-	
 }
 
 a{
@@ -50,38 +49,6 @@ a{
 	}
 	&:active{
 		text-decoration: none;
-	}
-}
-
-hr{
-	border-top: 5px solid rgba(90, 90, 90, 0.28); 
-	width: 100%;
-}
-
-header{
-	background-color: $head-foot-bg-color;
-	color: $link-color;
-	height: 200px;
-	font-family: 'Righteous',cursive;
-	font-size: 20px;
-	z-index: 1000;
-
-	a{
-		color: $link-color;
-		margin-left: 20px;
-
-		&:hover{
-			color: $main-title-color;
-		}
-	}
-
-	.head-nav{
-		color: $link-color;
-		float: right;
-
-		&:hover{
-			color: $main-title-color;
-		}
 	}
 }
 
@@ -100,7 +67,178 @@ header{
 	&:active{
 		text-decoration: none;
 	}
+}
 
+hr{
+	border-top: 5px solid rgba(90, 90, 90, 0.28); 
+	width: 100%;
+}
+
+/*HEADER STYLES*/
+
+header{
+	background-color: $head-foot-bg-color;
+	color: $link-color;
+	font-family: 'Righteous',cursive;
+	font-size: 20px;
+
+	a{
+		color: $link-color;
+		margin-left: 20px;
+
+		&:hover{
+			color: $main-title-color;
+		}
+	}
+
+	.head-nav{
+		color: $link-color;
+		float: right;
+
+		&:hover{
+			color: $main-title-color;
+		}
+	}
+	.margins-header{
+		margin-top: 60px;
+	}
+
+	.margins-header-img{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	#header-search{
+		input{
+			color:$sub-title-color;
+		}
+	}
+
+	.search{
+		width: 63%;
+		height: 200px;
+		background-color: #101010;
+		color: $link-color;
+		font-size: 20px;
+		padding: 15px;
+		display: none;
+		position: absolute;
+		top: 20px;
+		right: -100px;
+	}
+
+	.form{
+		width: 60%;
+		height: 200px;
+		background-color: #101010;
+		color: $link-color;
+		font-size: 24px;
+		padding: 15px;
+		display: none;
+		position: absolute;
+		top: 30px;
+		right: 50px;
+	}
+
+	#header-form{
+		z-index: 1000;
+
+		form{
+			width: 99%;
+			height: 100px;
+			margin-top: 10px;
+		}
+
+		input{
+			width: 100%;
+			height: 30px;
+			margin-top: 10px;
+			background-color: $link-color;
+			color: $sub-title-color;
+			font-size: 15px;
+			padding-left: 10px;
+		}
+
+		.btn-login{
+			color: #fff;
+			padding: 10px;
+			margin-top: 10px;
+			font-weight: bolder;
+			border-radius: 10px;
+			border-style: none;
+			text-decoration:none;
+			background-color: $main-title-color;
+		}
+	}
+}
+
+.btn-contact-us{
+	color: #fff;
+	padding: 10px;
+	margin-top: 10px;
+	font-weight: bolder;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-style: none;
+	text-decoration:none;
+	background-color: $button-bg-hover-color;
+	position: fixed;
+	bottom: 0;
+	right: 3px;
+	z-index: 1000;
+}
+
+/*SLIDER STYLES*/
+
+.carousel-indicators{
+	li{
+		background-color: $link-color;
+		border:none;
+		width: 100px;
+	}
+	.active{
+		background-color: $button-bg-hover-color;
+		border:none;
+		width: 100px; 
+	}
+
+}
+
+/*CONTAINER STYLES*/
+
+.margins-titles{
+	margin: 30px auto;
+}
+
+.round-img{
+	border-radius: $image-radius;
+}
+
+.btn-bg-color{
+	background-color: $button-bg-color;
+
+	&:hover{
+		background-color: $button-bg-hover-color;
+	}
+}
+
+.btn-read-more{
+	color: #fff;
+	padding: 10px;
+	font-weight: bolder;
+	border-radius: 10px;
+	border-style: none;
+	text-decoration:none;
+}
+
+.link-read-more{
+	color: $sub-title-color;
+	font-weight: normal;
+	text-decoration: none;
+	
+	&:hover{
+		color: $main-title-color;
+	}
 }
 
 .round-item-1{
@@ -125,74 +263,18 @@ header{
 	margin-top: 20px;
 }
 
-#list-news{
-	ol{
-		margin-top: -15px;
-	}
-	ol{
-		li{
-			list-style: none;
-			display: inline-block;
-		}
+ol{
+	margin-top: -15px;
+	
+	li{
+		list-style: none;
+		display: inline-block;
 	}
 }  
 
 .text-news{
 	display: inline-block;
 	text-align: left;
-}
-
-.round-img{
-	border-radius: $image-radius;
-}
-
-.btn-bg-color{
-	background-color: $button-bg-color;
-
-	&:hover{
-		background-color: $button-bg-hover-color;
-	}
-}
-
-.margins-head-foot{
-	margin: 90px auto;
-}
-
-.margins-titles{
-	margin: 30px auto;
-}
-
-.btn-read-more{
-	color: #fff;
-	padding: 10px;
-	font-weight: bolder;
-	border-radius: 10px;
-	border-style: none;
-	text-decoration:none;
-}
-
-.link-read-more{
-	color: $sub-title-color;
-	font-weight: normal;
-	text-decoration: none;
-	
-	&:hover{
-		color: $main-title-color;
-	}
-}
-
-.carousel-indicators{
-	li{
-		background-color: $link-color;
-		border:none;
-		width: 100px;
-	}
-	.active{
-		background-color: $button-bg-hover-color;
-		border:none;
-		width: 100px; 
-	}
-
 }
 
 .text-latest-news{
@@ -217,10 +299,11 @@ header{
 	}
 }
 
+/*FOOTER STYLES*/
+
 footer{
 	background-color: $head-foot-bg-color;
 	color: $link-color;
-	height: 100px;
 
 	a{
 		color: $link-color;
@@ -231,8 +314,12 @@ footer{
 		}
 	}
 
-	#copiright{
-		margin-top: 8px;
+	span{
+		line-height: 50px;
+	}
+
+	.margins-footer{
+		margin-top: 30px;
 	}
 
 	.social-fb{
@@ -268,6 +355,8 @@ footer{
 
 /*RESPONSIVE*/
 
+/*WIDTH 768*/
+
 @media (max-width: 768px){
 	h2{
 		text-align: -webkit-center;
@@ -275,10 +364,15 @@ footer{
 	h3{
 		text-align: -webkit-center;
 	}
-	.social{
+	footer .social{
 		float: none;
 	}
+	footer .social-fb{
+		float: none; 
+	}
 }
+
+/*WIDTH 992*/
 
 @media (max-width: 992px){
 	h2{
