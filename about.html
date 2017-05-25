@@ -1,33 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>About us</title>
+	<title>Game Portal</title>
 	<link rel="shortcut icon" type="image/png" href="images/gp_favicon.ico"/>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
 </head>
 <body>
 	<!--HEADER-->
 	<header class="container-fluid">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 margins-titles">
+				<div class="col-md-6  margins-header-img">
 					<img src="images/game_portal.png" class="img-responsive">
 				</div>
-				<div class="col-md-6 margins-head-foot">
-					<a href="#" class="head-nav"><i class="fa fa-search" aria-hidden="true"></i></a>
-					<a href="#" class="head-nav"><i class="fa fa-user" aria-hidden="true"></i></a>
+				<div class="col-md-6 margins-header hidden-sm hidden-xs">
+					<a href="#" id="search" class="head-nav"><i class="fa fa-search" aria-hidden="true"></i></a>
+					<div id="header-search" class="search">
+						<form>
+							<input type="text" name="Search" tabindex="0" placeholder="Search" required="">
+						</form> 
+					</div>
+					<a href="#" id="header-user" class="head-nav"><i class="fa fa-user" aria-hidden="true"></i></a>
+					<div id="header-form" class="form">
+						LOGIN FORM
+						<form>
+							<input type="text" name="Username" tabindex="0" placeholder="Username" required="">
+							<input type="text" name="Password" tabindex="0" placeholder="Password" required="">
+							<button class="btn-bg-color btn-login link">LOGIN</button>
+						</form> 
+					</div>
 					<a href="#" class="head-nav">// CONTACT</a>
 					<a href="about.html" target="blank_" class="head-nav">// ABOUT</a>
-					<a href="index.html" class="head-nav">HOME</a>
+					<a href="index.html" class="head-nav">// HOME</a>
 				</div>
 			</div>
 		</div>
+		<!--MENU RESPONSIVE-->
+		<nav class="navbar navbar-default hidden-md hidden-lg show-xs show-sm" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">HOME</a></li>
+					<li class="divider"></li>
+					<li><a href="#">ABOUT</a></li>
+					<li class="divider"></li>
+					<li><a href="#">CONTACT</a></li>
+					<li class="divider"></li>
+					<li><a id="nav-user" href="#">LOGIN</a>
+						<div id="nav-form" class="form">
+							LOGIN FORM
+							<form>
+								<input type="text" name="Username" tabindex="0" placeholder="Username" required="">
+								<input type="text" name="Password" tabindex="0" placeholder="Password" required="">
+								<button class="btn-bg-color btn-login link">LOGIN</button>
+							</form> 
+						</div>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div><!-- /.navbar-collapse -->
+		</nav>
+		<!--END MENU RESPONSIVE-->
 	</header>
 	<!--END HEADER-->
+	<button class="btn-contact-us link">CONTACT US!</button>
 	<!--ABOUT-->
 	<div class="container">
 		<section>
@@ -131,11 +186,20 @@
 	<!--FOOTER-->
 	<footer class="container-fluid">
 		<div class="container">
-			<div class="row margins-titles">
-				<div id="copiright" class="col-xs-12 col-md-6">
-					<span>Game Portal © 2017 - <a href="#">Privacy Policy</a></span>
+			<div class="row margins-footer">
+				<div class="show-xs col-xs-12 hidden-sm hidden-md hidden-lg text-center">
+					<a href="#"><i class="fa fa-facebook social-fb" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter social" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-google-plus social" aria-hidden="true"></i></a>
 				</div>
-				<div class="col-xs-12 col-md-6">
+				<div class="show-xs col-xs-12 hidden-sm hidden-md hidden-lg text-center">
+					<span>Game Portal © 2017 \\<a href="#">Privacy Policy terms</a></span>
+				</div>
+				<div class="hidden-xs show-sm col-sm-6">
+					<span>Game Portal © 2017 \\<a href="#">Privacy Policy terms</a></span>
+				</div>
+				<div class="hidden-xs show-sm col-sm-6">
 					<a href="#"><i class="fa fa-google-plus social" aria-hidden="true"></i></a>
 					<a href="#"><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
 					<a href="#"><i class="fa fa-twitter social" aria-hidden="true"></i></a>
