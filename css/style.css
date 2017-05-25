@@ -138,6 +138,123 @@ header {
   right: 3px;
   z-index: 1000; }
 
+/*HEADER RESPONSIVE STYLES*/
+.mini-submenu {
+  display: none;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 4px;
+  padding: 9px;
+  /*position: relative;*/
+  width: 42px; }
+
+.mini-submenu:hover {
+  cursor: pointer; }
+
+.mini-submenu .icon-bar {
+  border-radius: 1px;
+  display: block;
+  height: 2px;
+  width: 22px;
+  margin-top: 3px; }
+
+.mini-submenu .icon-bar {
+  background-color: #000; }
+
+#slide-submenu {
+  background: rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 4px;
+  cursor: pointer; }
+
+.navbar-default {
+  background-color: #101010;
+  border-color: #101010; }
+  .navbar-default .navbar-toggle {
+    border-color: #d84315;
+    background-color: #d84315; }
+    .navbar-default .navbar-toggle:hover {
+      background-color: #d84315; }
+    .navbar-default .navbar-toggle:visited {
+      background-color: #d84315; }
+    .navbar-default .navbar-toggle:active {
+      background-color: #d84315; }
+    .navbar-default .navbar-toggle:focus {
+      background-color: #d84315; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #ffffff; }
+  .navbar-default .navbar-nav li a {
+    color: #ffffff; }
+    .navbar-default .navbar-nav li a:hover {
+      color: #ffffff;
+      background-color: rgba(216, 67, 21, 0.32);
+      border-radius: 5px; }
+    .navbar-default .navbar-nav li a:visited {
+      color: #ffffff; }
+    .navbar-default .navbar-nav li a:active {
+      color: #ffffff; }
+    .navbar-default .navbar-nav li a:focus {
+      color: #ffffff; }
+  .navbar-default .navbar-nav .active a {
+    color: #ffffff;
+    background-color: #d84315;
+    border-radius: 5px; }
+    .navbar-default .navbar-nav .active a:hover {
+      color: #ffffff;
+      background-color: #d84315; }
+    .navbar-default .navbar-nav .active a:visited {
+      color: #ffffff;
+      background-color: #d84315; }
+    .navbar-default .navbar-nav .active a:active {
+      color: #ffffff;
+      background-color: #d84315; }
+    .navbar-default .navbar-nav .active a:focus {
+      color: #ffffff;
+      background-color: #d84315; }
+  .navbar-default .navbar-nav #nav-form {
+    z-index: 2000;
+    width: 72%;
+    height: 168px;
+    background-color: #101010;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 9px;
+    display: none;
+    position: absolute;
+    top: -120px;
+    right: 0px; }
+    .navbar-default .navbar-nav #nav-form form {
+      width: 99%;
+      height: 100px;
+      margin-top: 10px; }
+    .navbar-default .navbar-nav #nav-form input {
+      width: 100%;
+      height: 30px;
+      margin-top: 10px;
+      background-color: #ffffff;
+      color: #000000;
+      font-size: 15px;
+      padding-left: 10px; }
+    .navbar-default .navbar-nav #nav-form .btn-login {
+      color: #fff;
+      padding: 10px;
+      margin-top: 10px;
+      font-weight: bolder;
+      border-radius: 10px;
+      border-style: none;
+      text-decoration: none;
+      background-color: #d84315; }
+
+.btn-default {
+  color: #ffffff;
+  background-color: #d84315;
+  border-color: #d84315; }
+  .btn-default:hover {
+    color: #ffffff;
+    background-color: #d84315;
+    border-color: #d84315; }
+
 /*SLIDER STYLES*/
 .carousel-indicators li {
   background-color: #ffffff;
@@ -260,7 +377,47 @@ footer {
       background-color: #d84315; }
 
 /*RESPONSIVE*/
+/*WIDTH 767*/
+@media (min-width: 396px) {
+  .navbar-default .navbar-nav #nav-form {
+    z-index: 2000;
+    width: 61%;
+    height: 168px;
+    background-color: #101010;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 9px;
+    display: none;
+    position: absolute;
+    top: -121px;
+    right: 0px; } }
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav #nav-form {
+    z-index: 2000;
+    width: 61%;
+    height: 168px;
+    background-color: #101010;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 9px;
+    display: none;
+    position: absolute;
+    top: -121px;
+    right: 0px; } }
 /*WIDTH 768*/
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav #nav-form {
+    z-index: 2000;
+    width: 184%;
+    height: 168px;
+    background-color: #101010;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 9px;
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0px; } }
 @media (max-width: 768px) {
   h2 {
     text-align: -webkit-center; }
