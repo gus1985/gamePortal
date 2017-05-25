@@ -38,6 +38,8 @@ a {
     text-decoration: none; }
   a:active {
     text-decoration: none; }
+  a:focus {
+    text-decoration: none; }
 
 .link {
   color: #ffffff;
@@ -48,6 +50,8 @@ a {
     color: #ffffff;
     text-decoration: none; }
   .link:active {
+    text-decoration: none; }
+  .link:focus {
     text-decoration: none; }
 
 hr {
@@ -87,7 +91,7 @@ header {
     display: none;
     position: absolute;
     top: 20px;
-    right: -100px; }
+    right: -85px; }
   header .form {
     width: 60%;
     height: 200px;
@@ -312,6 +316,9 @@ header {
   float: left;
   margin-top: 20px; }
 
+ul li {
+  list-style: none; }
+
 ol {
   margin-top: -15px; }
   ol li {
@@ -339,6 +346,12 @@ ol {
     content: '"';
     color: #f2841e;
     font: 60px/40px Righteous, cursive; }
+
+.mail a :hover {
+  color: #d84315; }
+
+#success_message {
+  display: none; }
 
 /*FOOTER STYLES*/
 footer {
