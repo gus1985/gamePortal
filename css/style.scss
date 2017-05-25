@@ -50,6 +50,9 @@ a{
 	&:active{
 		text-decoration: none;
 	}
+	&:focus{
+		text-decoration: none;
+	}
 }
 
 .link{
@@ -65,6 +68,9 @@ a{
 		text-decoration: none; 
 	}
 	&:active{
+		text-decoration: none;
+	}
+	&:focus{
 		text-decoration: none;
 	}
 }
@@ -124,7 +130,7 @@ header{
 		display: none;
 		position: absolute;
 		top: 20px;
-		right: -100px;
+		right: -85px;
 	}
 
 	.form{
@@ -425,6 +431,12 @@ header{
 	margin-top: 20px;
 }
 
+ul{
+	li{
+		list-style: none;
+	}
+}
+
 ol{
 	margin-top: -15px;
 	
@@ -460,6 +472,17 @@ ol{
 		font: 60px/40px Righteous, cursive;
 	}
 }
+
+.mail{
+
+	a{
+		:hover{
+			color: $main-title-color;
+		}
+	}
+}
+
+#success_message{ display: none;}
 
 /*FOOTER STYLES*/
 
