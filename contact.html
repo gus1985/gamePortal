@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game Portal</title>
+	<link rel="shortcut icon" type="image/png" href="images/gp_favicon.ico"/>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body>
+	<!--HEADER-->
+	<header class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6  margins-header-img">
+					<img src="images/game_portal.png" class="img-responsive">
+				</div>
+				<div class="col-md-6 margins-header hidden-sm hidden-xs">
+					<a href="#" id="search" class="head-nav"><i class="fa fa-search" aria-hidden="true"></i></a>
+					<div id="header-search" class="search">
+						<form>
+							<input type="text" name="Search" tabindex="0" placeholder="Search" required="">
+						</form> 
+					</div>
+					<a href="#" id="header-user" class="head-nav"><i class="fa fa-user" aria-hidden="true"></i></a>
+					<div id="header-form" class="form">
+						LOGIN FORM
+						<form>
+							<input type="text" name="Username" tabindex="0" placeholder="Username" required="">
+							<input type="text" name="Password" tabindex="0" placeholder="Password" required="">
+							<button class="btn-bg-color btn-login link">LOGIN</button>
+						</form> 
+					</div>
+					<a href="contact.html" target="blank_" class="head-nav">// CONTACT</a>
+					<a href="about.html" target="blank_" class="head-nav">// ABOUT</a>
+					<a href="index.html" class="head-nav">// HOME</a>
+				</div>
+			</div>
+		</div>
+		<!--MENU RESPONSIVE-->
+		<nav class="navbar navbar-default hidden-md hidden-lg show-xs show-sm" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">HOME</a></li>
+					<li class="divider"></li>
+					<li><a href="about.html" target="blank_">ABOUT</a></li>
+					<li class="divider"></li>
+					<li><a href="contact.html" target="blank_">CONTACT</a></li>
+					<li class="divider"></li>
+					<li><a id="nav-user" href="#">LOGIN</a>
+						<div id="nav-form" class="form">
+							LOGIN FORM
+							<form>
+								<input type="text" name="Username" tabindex="0" placeholder="Username" required="">
+								<input type="text" name="Password" tabindex="0" placeholder="Password" required="">
+								<button class="btn-bg-color btn-login link">LOGIN</button>
+							</form> 
+						</div>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div><!-- /.navbar-collapse -->
+		</nav>
+		<!--END MENU RESPONSIVE-->
+	</header>
+	<!--END HEADER-->
+	<!--CONTACT CONTENT-->
+		<div class="container">
+			<!--MAP-->
+			<div class="row">
+				<div class="col-lg-12">
+					<h2>CONTACT INFO</h2>
+					<iframe class="margins-titles" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26270.542958514256!2d-58.398010045243076!3d-34.6087667417474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos+Aires%2C+CABA!5e0!3m2!1ses!2sar!4v1495702744884" width="1130" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<!--END MAP-->
+		<!--CONTACT INFO-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<ul>
+						<li>
+							<h4>ADDRESS</h4>
+							<p>Figueroa Alcorta 900, 8° "A" - Bs.As, Argentina</p>	
+						</li>
+						<li>
+							<h4>PHONES</h4>
+							<p>15-444-7788</p>
+							<p>4-555-6677</p>
+						</li>
+						<li class="mail">
+							<h4>E-MAIL</h4>
+							<a href="#"><p>info@gameportal.com</p></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-9">
+					<form class="well form-horizontal" action=" " method="post"  id="contact_form">
+						<fieldset>
+							<!-- Form Name -->
+							<legend>MISCELLANEOUS INFORMATION:</legend>
+							<!-- Text input-->
+							<div class="form-group">
+								<label class="col-md-4 control-label">First Name</label>  
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										<input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+									</div>
+								</div>
+							</div>
+							<!-- Text input-->
+							<div class="form-group">
+								<label class="col-md-4 control-label" >Last Name</label> 
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										<input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+									</div>
+								</div>
+							</div>
+							<!-- Text input-->
+							<div class="form-group">
+								<label class="col-md-4 control-label">E-Mail</label>  
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+										<input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+									</div>
+								</div>
+							</div>
+							<!-- Text input-->
+							<div class="form-group">
+								<label class="col-md-4 control-label">Phone #</label>  
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+										<input name="phone" placeholder="(011)4-999-3311" class="form-control" type="text">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-4 control-label">Commentaries</label>
+								<div class="col-md-4 inputGroupContainer">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+										<textarea class="form-control" name="comment" placeholder="Comment"></textarea>
+									</div>
+								</div>
+							</div>
+							<!-- Success message -->
+							<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+							<!-- Button -->
+							<div class="form-group">
+								<label class="col-md-4 control-label"></label>
+								<div class="col-md-4">
+									<button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--END CONTACT INFO-->
+		<!--END CONTACT CONTENT-->
+		<!--FOOTER-->
+		<footer class="container-fluid">
+			<div class="container">
+				<div class="row margins-footer">
+					<div class="show-xs col-xs-12 hidden-sm hidden-md hidden-lg text-center">
+						<a href="#"><i class="fa fa-facebook social-fb" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter social" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-google-plus social" aria-hidden="true"></i></a>
+					</div>
+					<div class="show-xs col-xs-12 hidden-sm hidden-md hidden-lg text-center">
+						<span>Game Portal © 2017 \\<a href="#">Privacy Policy terms</a></span>
+					</div>
+					<div class="hidden-xs show-sm col-sm-6">
+						<span>Game Portal © 2017 \\<a href="#">Privacy Policy terms</a></span>
+					</div>
+					<div class="hidden-xs show-sm col-sm-6">
+						<a href="#"><i class="fa fa-google-plus social" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter social" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-facebook social-fb" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--END FOOTER-->
+	</body>
+	</html>
