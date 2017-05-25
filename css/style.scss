@@ -188,6 +188,168 @@ header{
 	z-index: 1000;
 }
 
+/*HEADER RESPONSIVE STYLES*/
+
+.mini-submenu{
+	display:none;  
+	background-color: rgba(0, 0, 0, 0);  
+	border: 1px solid rgba(0, 0, 0, 0.9);
+	border-radius: 4px;
+	padding: 9px;  
+	/*position: relative;*/
+	width: 42px;
+
+}
+
+.mini-submenu:hover{
+	cursor: pointer;
+}
+
+.mini-submenu .icon-bar {
+	border-radius: 1px;
+	display: block;
+	height: 2px;
+	width: 22px;
+	margin-top: 3px;
+}
+
+.mini-submenu .icon-bar {
+	background-color: #000;
+}
+
+#slide-submenu{
+	background: rgba(0, 0, 0, 0.45);
+	display: inline-block;
+	padding: 0 8px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.navbar-default {
+	background-color: $head-foot-bg-color;
+	border-color: $head-foot-bg-color;
+
+	.navbar-toggle {
+		border-color: $main-title-color;
+		background-color: $main-title-color;
+
+		&:hover{
+			background-color:$main-title-color;
+		}
+		&:visited{
+			background-color: $main-title-color;
+		}
+		&:active{
+			background-color: $main-title-color;
+		}
+		&:focus{
+			background-color: $main-title-color;
+		}
+
+		.icon-bar{
+			background-color: $link-color;
+		}
+	}
+	.navbar-nav{
+		li{
+			a{
+				color: $link-color;
+
+				&:hover{
+					color: $link-color;
+					background-color: rgba(216, 67, 21, 0.32);
+					border-radius: 5px;
+				}
+				&:visited{
+					color: $link-color;
+				}
+				&:active{
+					color: $link-color;
+				}
+				&:focus{
+					color: $link-color;
+				}
+			}
+		}
+		.active{
+			a{
+				color: $link-color;
+				background-color: $main-title-color;
+				border-radius: 5px;
+
+				&:hover{
+					color: $link-color;
+					background-color:$main-title-color;
+				}
+				&:visited{
+					color: $link-color;
+					background-color: $main-title-color;
+				}
+				&:active{
+					color: $link-color;
+					background-color: $main-title-color;
+				}
+				&:focus{
+					color: $link-color;
+					background-color: $main-title-color;
+				}	
+			}
+		}
+		#nav-form{
+			z-index: 2000;
+			width: 72%;
+			height: 168px;
+			background-color: #101010;
+			color: #ffffff;
+			font-size: 24px;
+			padding: 9px;
+			display: none;
+			position: absolute;
+			top: -120px;
+			right: 0px;
+
+			form{
+				width: 99%;
+				height: 100px;
+				margin-top: 10px;
+			}
+
+			input{
+				width: 100%;
+				height: 30px;
+				margin-top: 10px;
+				background-color: $link-color;
+				color: $sub-title-color;
+				font-size: 15px;
+				padding-left: 10px;
+			}
+
+			.btn-login{
+				color: #fff;
+				padding: 10px;
+				margin-top: 10px;
+				font-weight: bolder;
+				border-radius: 10px;
+				border-style: none;
+				text-decoration:none;
+				background-color: $main-title-color;
+			}
+		}
+	}
+}
+
+.btn-default {
+	color: $link-color;
+	background-color: $main-title-color;
+	border-color: $main-title-color;
+
+	&:hover{
+		color: $link-color;
+		background-color: $main-title-color;
+		border-color: $main-title-color;
+	}
+}
+
 /*SLIDER STYLES*/
 
 .carousel-indicators{
@@ -355,7 +517,71 @@ footer{
 
 /*RESPONSIVE*/
 
+/*WIDTH 767*/
+
+@media (min-width: 396px){
+	.navbar-default {
+		.navbar-nav{
+			#nav-form{
+				z-index: 2000;
+				width: 61%;
+				height: 168px;
+				background-color: #101010;
+				color: #ffffff;
+				font-size: 24px;
+				padding: 9px;
+				display: none;
+				position: absolute;
+				top: -121px;
+				right: 0px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px){
+	.navbar-default {
+		.navbar-nav{
+			#nav-form{
+				z-index: 2000;
+				width: 61%;
+				height: 168px;
+				background-color: #101010;
+				color: #ffffff;
+				font-size: 24px;
+				padding: 9px;
+				display: none;
+				position: absolute;
+				top: -121px;
+				right: 0px;
+			}
+		}
+	}
+}
+
+
+
 /*WIDTH 768*/
+
+@media (min-width: 768px){
+	.navbar-default {
+		.navbar-nav{
+			#nav-form {
+				z-index: 2000;
+				width: 184%;
+				height: 168px;
+				background-color: #101010;
+				color: #ffffff;
+				font-size: 24px;
+				padding: 9px;
+				display: none;
+				position: absolute;
+				top: 45px;
+				right: 0px;
+			}
+		}
+	}
+}
 
 @media (max-width: 768px){
 	h2{
